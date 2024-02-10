@@ -1,0 +1,34 @@
+{
+    "name": "SMTInputActions",
+    "maps": [
+        {
+            "name": "Ingame",
+            "id": "d803fcf1-e3bc-483b-adff-5cb4c3cf1d42",
+            "actions": [
+                {
+                    "name": "OnKeyDown",
+                    "type": "Button",
+                    "id": "17aafece-d54a-4750-b336-d361b7ca06e6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "77c8b386-2530-4fdb-83fc-c512ab7d9d9b",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnKeyDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
