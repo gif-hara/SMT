@@ -36,14 +36,14 @@ namespace SMT
             }
             gameLoopArea.SetActive(true);
             gameEndArea.SetActive(false);
-            countLabel.text = currentCount.ToString();
+            countLabel.SetText("{0}", currentCount);
             this.GetAsyncUpdateTrigger()
                 .Subscribe(_ =>
                 {
                     if (Keyboard.current.wasUpdatedThisFrame)
                     {
                         currentCount++;
-                        countLabel.text = currentCount.ToString();
+                        countLabel.SetText("{0}", currentCount);
                         if (currentCount >= endCount)
                         {
                             EndProcess();
@@ -56,7 +56,7 @@ namespace SMT
                 endSound.PlayOneShot(endSound.clip);
                 scope.Cancel();
                 scope.Dispose();
-                endCountLabel.text = currentCount.ToString();
+                endCountLabel.SetText("{0}", currentCount);
                 gameLoopArea.SetActive(false);
                 gameEndArea.SetActive(true);
             }
