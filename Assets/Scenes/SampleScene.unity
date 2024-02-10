@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDocument: {fileID: 1517580491495148722, guid: dc2b3f320e7e1784ba45728144578677, type: 3}
   endSound: {fileID: 1289440392}
-  endRange: 200
+  endRange: 65535
 --- !u!4 &192526419
 Transform:
   m_ObjectHideFlags: 0
